@@ -62,9 +62,9 @@ MLOPS/
 |------------|-------|--------|
 | Assignment 1 (Practice) | Dataset Versioning using DVC | ✅ Completed |
 | Assignment 1 | Dataset Versioning using DVC | ✅ Completed |
-| Assignment 2 | *To be Updated* | ⏳ Pending |
+| Assignment 2 | Model Training Using MLFlow | ✅ Completed |
 | Assignment 3 | *To be Updated* | ⏳ Pending |
-| Assignment 4 | *To be Updated* | ⏳ Pending |
+| Assignment 4 (Practice) | Airflow (Manual Trigger) | ✅ Completed |
 | Assignment 5 | *To be Updated* | ⏳ Pending |
 
 ---
@@ -100,7 +100,7 @@ git clone <repository-url>
 ## 2. Navigate to the Repository
 
 ```bash
-cd MLOPS
+cd mlops-assignments
 ```
 
 ---
