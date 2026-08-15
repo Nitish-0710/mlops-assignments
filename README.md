@@ -92,7 +92,7 @@ This repository covers practical implementations of:
 ## 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Nitish-0710/mlops-assignments
 ```
 
 ---
@@ -108,7 +108,7 @@ cd mlops-assignments
 ## 3. Create a Virtual Environment
 
 ```bash
-py -m venv .venv
+python -m venv .venv
 ```
 
 ---
