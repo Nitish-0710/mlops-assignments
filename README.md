@@ -63,7 +63,7 @@ MLOPS/
 | Assignment 1 (Practice) | Dataset Versioning using DVC | ✅ Completed |
 | Assignment 1 | Dataset Versioning using DVC | ✅ Completed |
 | Assignment 2 | Model Training Using MLFlow | ✅ Completed |
-| Assignment 3 | *To be Updated* | ⏳ Pending |
+| Assignment 3 | Feature Engineering Pipeline | ✅ Completed |
 | Assignment 4 (Practice) | Airflow (Manual Trigger) | ✅ Completed |
 | Assignment 5 | *To be Updated* | ⏳ Pending |
 
