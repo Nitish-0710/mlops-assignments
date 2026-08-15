@@ -354,12 +354,16 @@ The exact files may vary depending on the local setup.
 Make sure the following is/are installed:
 
 - Python 3.x
+- Git
+- Jupyter / VS Code
 
 ## 1. Clone the Repository
 
 ```bash
 git clone https://github.com/Nitish-0710/mlops-assignments
-cd MLOPS/Assignment-3-Feature-Engineering-Pipeline
+
+# Navigate to root folder
+cd mlops-assignments
 ```
 
 ## 2. Create a Virtual Environment
