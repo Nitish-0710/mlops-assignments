@@ -49,7 +49,7 @@ def test_placed_student_prediction():
 
     prediction = model.predict(student)[0]
 
-    assert prediction == 0
+    assert prediction == 1
 
 
 def test_not_placed_student_prediction():
