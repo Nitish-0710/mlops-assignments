@@ -1,6 +1,6 @@
 # MLOps Assignments
 
-A collection of **Machine Learning Operations (MLOps)** assignments completed as part of the university coursework. This repository demonstrates the practical implementation of various MLOps concepts, tools, and workflows using Python, Git, DVC, MLflow, Docker, and other modern MLOps technologies.
+A collection of **Machine Learning Operations (MLOps)** assignments completed as part of university coursework. This repository demonstrates the practical implementation of MLOps concepts, tools, and workflows using Python, Git, DVC, MLflow, Apache Airflow, GitHub Actions, and other supporting technologies.
 
 ---
 
@@ -12,6 +12,7 @@ The primary objectives of this repository are to:
 - Understand data and model versioning.
 - Build reproducible Machine Learning workflows.
 - Gain hands-on experience with industry-standard MLOps tools.
+- Implement automated testing and CI/CD workflows.
 - Maintain well-documented assignments with proper version control.
 
 ---
@@ -25,47 +26,65 @@ The primary objectives of this repository are to:
 - DVC (Data Version Control)
 - Pandas
 - NumPy
+- MLflow
+- Apache Airflow
+- Scikit-learn
+- Pytest
+- Flake8
+- GitHub Actions
 
-> Additional tools such as **MLflow**, **Docker**, **FastAPI**, **CI/CD**, **Kubeflow**, etc., will be added as future assignments are completed.
+Additional technologies such as Docker, FastAPI, Kubernetes, Kubeflow, and model monitoring may be explored in future assignments and projects.
 
 ---
 
 # 📂 Repository Structure
 
-```
+```text
 MLOPS/
 │
+├── .github/
+│   └── workflows/
+│       └── ml-ci-cd-practice.yml
+│
 ├── Assignment-1-DVC-Practice/
-│   ├── data/
-│   ├── notebooks/
-│   └── README.md
 │
 ├── Assignment-1-Employee/
+│
+├── Assignment-2-MLFlow/
+│
+├── Assignment-3-Feature-Engineering-Pipeline/
+│
+├── Assignment-4-Airflow-Practice/
+│
+├── Assignment-4-Airflow/
+│
+├── Assignment-5-CI-CD-Practice/
 │   ├── data/
-│   ├── notebooks/
-│   └── README.md
-│
-├── Assignment-2/
-│
-├── Assignment-3/
+│   ├── placement_model.pkl
+│   ├── predict.py
+│   ├── requirements.txt
+│   ├── test_model.py
+│   └── train.py
 │
 ├── .gitignore
+├── .dvcignore
 ├── README.md
 └── requirements.txt
-```
+````
 
 ---
 
 # 📚 Assignments
 
-| Assignment | Topic | Status |
-|------------|-------|--------|
-| Assignment 1 (Practice) | Dataset Versioning using DVC | ✅ Completed |
-| Assignment 1 | Dataset Versioning using DVC | ✅ Completed |
-| Assignment 2 | Model Training Using MLFlow | ✅ Completed |
-| Assignment 3 | Feature Engineering Pipeline | ✅ Completed |
-| Assignment 4 (Practice) | Airflow (Manual Trigger) | ✅ Completed |
-| Assignment 5 | *To be Updated* | ⏳ Pending |
+| Assignment              | Topic                                               | Status      |
+| ----------------------- | --------------------------------------------------- | ----------- |
+| Assignment 1 (Practice) | Dataset Versioning using DVC                        | ✅ Completed |
+| Assignment 1            | Dataset Versioning using DVC                        | ✅ Completed |
+| Assignment 2            | Experiment Tracking using MLflow                    | ✅ Completed |
+| Assignment 3            | Feature Engineering Pipeline                        | ✅ Completed |
+| Assignment 4 (Practice) | Airflow Workflow                                    | ✅ Completed |
+| Assignment 4            | Automated ML Training Pipeline using Apache Airflow | ✅ Completed |
+| Assignment 5            | CI/CD for Student Placement Prediction              | ✅ Completed |
 
 ---
 
@@ -73,17 +92,20 @@ MLOPS/
 
 This repository covers practical implementations of:
 
-- Dataset Versioning
-- Model Versioning
-- Experiment Tracking
-- Pipeline Management
-- Model Deployment
-- Containerization
-- Continuous Integration & Continuous Deployment (CI/CD)
-- Model Monitoring
-- Reproducibility in Machine Learning
+* Version Control using Git
+* Dataset Versioning using DVC
+* Experiment Tracking using MLflow
+* Feature Engineering
+* Machine Learning Pipelines
+* Workflow Orchestration using Apache Airflow
+* Automated Testing using Pytest
+* Code Quality Checking using Flake8
+* Continuous Integration & Continuous Deployment (CI/CD)
+* Model Training and Evaluation
+* Model Artifact Management
+* Reproducibility in Machine Learning
 
-> The list will be updated as additional assignments are completed.
+Future assignments and projects may extend these concepts to model deployment, containerization, monitoring, and scalable MLOps systems.
 
 ---
 
@@ -92,7 +114,7 @@ This repository covers practical implementations of:
 ## 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Nitish-0710/mlops-assignments
+git clone https://github.com/Nitish-0710/mlops-assignments.git
 ```
 
 ---
@@ -135,32 +157,56 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
+Individual assignments may contain their own `requirements.txt` files when assignment-specific dependencies are required.
+
 ---
 
-## 📖 Assignment Structure
+# 📖 Assignment Structure
 
-Each assignment follows a consistent structure:
+Each assignment is organized according to its requirements and may contain different files such as:
 
-```
+```text
 Assignment-X/
 │
 ├── data/
-│
-├── notebooks/
-│
+├── notebooks/          # If required
+├── scripts/
+├── models/
+├── tests/
 ├── README.md
-│
-└── (additional files if required)
+└── additional files
 ```
 
-Each assignment contains:
+Assignment-specific documentation may include:
 
-- Objective
-- Dataset (if applicable)
-- Jupyter Notebook
-- Step-by-step implementation
-- Results
-- Assignment-specific documentation
+* Objective
+* Dataset
+* Implementation
+* Configuration
+* Results
+* Testing
+* MLOps workflow
+* Assignment-specific documentation
+
+---
+
+# 🔄 MLOps Learning Progression
+
+The assignments progressively cover different stages of an MLOps workflow:
+
+```text
+Data Versioning
+       ↓
+Experiment Tracking
+       ↓
+Feature Engineering & ML Pipelines
+       ↓
+Workflow Orchestration
+       ↓
+CI/CD Automation
+```
+
+This progression provides hands-on experience with managing machine learning assets, experiments, workflows, and automated software delivery.
 
 ---
 
@@ -168,28 +214,32 @@ Each assignment contains:
 
 Through these assignments, the following concepts are practiced:
 
-- Version control using Git
-- Dataset versioning using DVC
-- Experiment reproducibility
-- Managing Machine Learning assets
-- Building organized ML project structures
-- Maintaining professional documentation
-- Understanding industry-standard MLOps workflows
+* Version control using Git and GitHub
+* Dataset versioning using DVC
+* Experiment tracking using MLflow
+* Feature engineering and pipeline development
+* Workflow orchestration using Apache Airflow
+* Automated testing using Pytest
+* Code quality checking using Flake8
+* Continuous Integration and Continuous Deployment
+* Model training and evaluation
+* Managing Machine Learning artifacts
+* Reproducible Machine Learning workflows
+* Maintaining organized technical documentation
 
 ---
 
-# 📌 Future Enhancements
+# 🚀 Future Enhancements
 
-The repository will be expanded with assignments covering:
+Future work may include:
 
-- MLflow Experiment Tracking
-- Docker for ML Applications
-- FastAPI Model Deployment
-- GitHub Actions CI/CD
-- Kubernetes & Kubeflow
-- Airflow Pipelines
-- Model Monitoring
-- End-to-End MLOps Projects
+* Docker for ML Applications
+* FastAPI Model Deployment
+* Kubernetes
+* Kubeflow
+* Model Monitoring
+* End-to-End MLOps Projects
+* Cloud-based ML deployment
 
 ---
 
@@ -197,7 +247,8 @@ The repository will be expanded with assignments covering:
 
 **Nitish Sahu**
 
-B.Tech Computer Science & Engineering (Artificial Intelligence)  
+B.Tech Computer Science & Engineering (Artificial Intelligence)
+
 Vishwakarma Institute of Technology (VIT), Pune
 
 ---
