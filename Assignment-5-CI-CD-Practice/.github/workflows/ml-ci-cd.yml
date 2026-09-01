@@ -1,0 +1,123 @@
+name: Student Placement ML CI-CD
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  test:
+    name: CI - Validate, Train and Test Model
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r Assignment-5-CI-CD-Practice/requirements.txt
+
+      - name: Validate Dataset
+        run: |
+          python -c "
+          import pandas as pd
+
+          path = 'Assignment-5-CI-CD-Practice/data/student_placement.csv'
+          data = pd.read_csv(path)
+
+          required_columns = [
+              'CGPA',
+              'Attendance',
+              'CodingScore',
+              'Projects',
+              'Internship',
+              'Placement'
+          ]
+
+          if not all(column in data.columns for column in required_columns):
+              raise ValueError('Dataset is missing required columns.')
+
+          if data[required_columns].isnull().any().any():
+              raise ValueError('Dataset contains missing values.')
+
+          if len(data) == 0:
+              raise ValueError('Dataset is empty.')
+
+          print('Dataset validation passed.')
+          "
+
+      - name: Train Model
+        working-directory: Assignment-5-CI-CD-Practice
+        run: |
+          python train.py
+
+      - name: Verify Model File
+        working-directory: Assignment-5-CI-CD-Practice
+        run: |
+          python -c "
+          import os
+
+          if not os.path.exists('placement_model.pkl'):
+              raise FileNotFoundError(
+                  'Required model file placement_model.pkl was not generated.'
+              )
+
+          print('Model file check passed.')
+          "
+
+      - name: Run Automated Tests
+        working-directory: Assignment-5-CI-CD-Practice
+        run: |
+          python -m pytest
+
+      - name: Check Prediction
+        working-directory: Assignment-5-CI-CD-Practice
+        run: |
+          python -c "
+          import pickle
+          import pandas as pd
+
+          with open('placement_model.pkl', 'rb') as file:
+              model = pickle.load(file)
+
+          student = pd.DataFrame([{
+              'CGPA': 8.5,
+              'Attendance': 92,
+              'CodingScore': 85,
+              'Projects': 3,
+              'Internship': 1
+          }])
+
+          prediction = model.predict(student)[0]
+
+          if prediction not in [0, 1]:
+              raise ValueError('Prediction API returned an invalid result.')
+
+          print('Prediction check passed.')
+          "
+
+      - name: Code Quality Check
+        working-directory: Assignment-5-CI-CD-Practice
+        run: |
+          python -m flake8 train.py predict.py test_model.py
+
+  deploy:
+    name: CD - Deploy Application
+    needs: test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Deploy Application
+        run: |
+          echo "Student Placement Prediction application deployed successfully!"
