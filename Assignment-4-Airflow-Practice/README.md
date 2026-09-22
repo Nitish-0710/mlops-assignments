@@ -70,7 +70,7 @@ The report is saved as:
 output/student_report.txt
 ```
 
-## Project Structure
+## Assignment Structure
 
 ```text
 Assignment-4-Airflow-Practice/
