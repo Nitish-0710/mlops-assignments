@@ -1,0 +1,22 @@
+{
+    "dataset": "Ames Housing / House Prices",
+    "target": "SalePrice",
+    "problem_type": "Regression",
+    "training_samples": 1168,
+    "testing_samples": 292,
+    "input_features": 79,
+    "numerical_features": 34,
+    "categorical_features": 45,
+    "model": "GradientBoostingRegressor",
+    "parameters": {
+        "model__learning_rate": 0.05,
+        "model__max_depth": 3,
+        "model__min_samples_split": 2,
+        "model__n_estimators": 300
+    },
+    "best_cv_rmse": 28390.875808943336,
+    "MAE": 16782.197416418476,
+    "RMSE": 26615.06497611918,
+    "R2": 0.9076490797719518,
+    "artifact": "house_price_pipeline.joblib"
+}
