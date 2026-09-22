@@ -70,21 +70,23 @@ MLOPS/
 ├── .dvcignore
 ├── README.md
 └── requirements.txt
-````
+```
 
 ---
 
 # 📚 Assignments
 
-| Assignment              | Topic                                               | Status      |
-| ----------------------- | --------------------------------------------------- | ----------- |
+| Assignment              | Topic                                               | Status       |
+| ----------------------- | --------------------------------------------------- | ------------ |
 | Assignment 1 (Practice) | Dataset Versioning using DVC                        | ✅ Completed |
 | Assignment 1            | Dataset Versioning using DVC                        | ✅ Completed |
 | Assignment 2            | Experiment Tracking using MLflow                    | ✅ Completed |
 | Assignment 3            | Feature Engineering Pipeline                        | ✅ Completed |
 | Assignment 4 (Practice) | Airflow Workflow                                    | ✅ Completed |
 | Assignment 4            | Automated ML Training Pipeline using Apache Airflow | ✅ Completed |
-| Assignment 5            | CI/CD for Student Placement Prediction              | ✅ Completed |
+| Assignment 5 (Practice) | CI/CD for Student Placement Prediction              | ✅ Completed |
+| Assignment 6            | Create REST API using FAST API                      |              |
+| Assignment 7            | Containerize ML model using Docker                  | ✅ Completed |
 
 ---
 
@@ -92,18 +94,18 @@ MLOPS/
 
 This repository covers practical implementations of:
 
-* Version Control using Git
-* Dataset Versioning using DVC
-* Experiment Tracking using MLflow
-* Feature Engineering
-* Machine Learning Pipelines
-* Workflow Orchestration using Apache Airflow
-* Automated Testing using Pytest
-* Code Quality Checking using Flake8
-* Continuous Integration & Continuous Deployment (CI/CD)
-* Model Training and Evaluation
-* Model Artifact Management
-* Reproducibility in Machine Learning
+- Version Control using Git
+- Dataset Versioning using DVC
+- Experiment Tracking using MLflow
+- Feature Engineering
+- Machine Learning Pipelines
+- Workflow Orchestration using Apache Airflow
+- Automated Testing using Pytest
+- Code Quality Checking using Flake8
+- Continuous Integration & Continuous Deployment (CI/CD)
+- Model Training and Evaluation
+- Model Artifact Management
+- Reproducibility in Machine Learning
 
 Future assignments and projects may extend these concepts to model deployment, containerization, monitoring, and scalable MLOps systems.
 
@@ -179,14 +181,14 @@ Assignment-X/
 
 Assignment-specific documentation may include:
 
-* Objective
-* Dataset
-* Implementation
-* Configuration
-* Results
-* Testing
-* MLOps workflow
-* Assignment-specific documentation
+- Objective
+- Dataset
+- Implementation
+- Configuration
+- Results
+- Testing
+- MLOps workflow
+- Assignment-specific documentation
 
 ---
 
@@ -214,32 +216,31 @@ This progression provides hands-on experience with managing machine learning ass
 
 Through these assignments, the following concepts are practiced:
 
-* Version control using Git and GitHub
-* Dataset versioning using DVC
-* Experiment tracking using MLflow
-* Feature engineering and pipeline development
-* Workflow orchestration using Apache Airflow
-* Automated testing using Pytest
-* Code quality checking using Flake8
-* Continuous Integration and Continuous Deployment
-* Model training and evaluation
-* Managing Machine Learning artifacts
-* Reproducible Machine Learning workflows
-* Maintaining organized technical documentation
+- Version control using Git and GitHub
+- Dataset versioning using DVC
+- Experiment tracking using MLflow
+- Feature engineering and pipeline development
+- Workflow orchestration using Apache Airflow
+- Automated testing using Pytest
+- Code quality checking using Flake8
+- Continuous Integration and Continuous Deployment
+- Model training and evaluation
+- Managing Machine Learning artifacts
+- Reproducible Machine Learning workflows
+- Maintaining organized technical documentation
+- Docker for ML Applications
+- FastAPI Model Deployment
 
 ---
 
 # 🚀 Future Enhancements
 
 Future work may include:
-
-* Docker for ML Applications
-* FastAPI Model Deployment
-* Kubernetes
-* Kubeflow
-* Model Monitoring
-* End-to-End MLOps Projects
-* Cloud-based ML deployment
+- Kubernetes
+- Kubeflow
+- Model Monitoring
+- End-to-End MLOps Projects
+- Cloud-based ML deployment
 
 ---
 
