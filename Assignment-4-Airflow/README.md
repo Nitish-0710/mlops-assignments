@@ -224,7 +224,7 @@ automatically without requiring a manual trigger.
 
 ---
 
-## Project Structure
+## Assignment Structure
 
 ```text
 Assignment-4-Airflow/
@@ -305,11 +305,11 @@ The final report contains the model name, accuracy, precision, recall, F1-score,
 
 ---
 
-# Running the Project
+# Running the Assignment
 
 ### 1. Clone the Repository
 
-Clone the repository and navigate into the project directory:
+Clone the repository and navigate into the assignment directory:
 
 ```bash
 git clone https://github.com/Nitish-0710/mlops-assignments
@@ -328,7 +328,7 @@ source ~/airflow_venv/bin/activate
 
 ### 3. Configure the Airflow DAG Folder
 
-Set the DAG folder relative to the current project directory:
+Set the DAG folder relative to the current assignment directory:
 
 ```bash
 export AIRFLOW__CORE__DAGS_FOLDER="$(pwd)/dags"
@@ -386,7 +386,7 @@ All tasks execute in the correct order, and the trained model and evaluation rep
 
 This assignment demonstrates the use of **Apache Airflow for Machine Learning workflow orchestration and automation**.
 
-The project shows how individual Machine Learning notebooks can be connected into a scheduled pipeline where Airflow manages task dependencies, execution, scheduling, logging, and monitoring.
+The assignment shows how individual Machine Learning notebooks can be connected into a scheduled pipeline where Airflow manages task dependencies, execution, scheduling, logging, and monitoring.
 
 The implementation provides a basic MLOps workflow that reduces manual intervention and establishes a foundation for more advanced automated ML pipelines.
 
