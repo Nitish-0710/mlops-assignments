@@ -6,3 +6,4 @@ mlruns/
 *.db
 mlartifacts
 .pytest_cache/
+*.pdf
