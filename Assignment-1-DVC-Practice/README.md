@@ -4,7 +4,7 @@
 
 The objective of this practice assignment is to understand the basic workflow of **Dataset Versioning using Data Version Control (DVC)**.
 
-A custom **Student Dataset** is created and maintained through multiple versions. The dataset is tracked using **DVC** while Git is used to manage the project source code and version history.
+A custom **Student Dataset** is created and maintained through multiple versions. The dataset is tracked using **DVC** while Git is used to manage the assignment source code and version history.
 
 
 ## 🛠️ Technologies Used
@@ -15,7 +15,7 @@ A custom **Student Dataset** is created and maintained through multiple versions
 - Git
 - DVC (Data Version Control)
 
-## 📂 Project Structure
+## 📂 Assignment Structure
 
 ```text
 Assignment-1-DVC-Practice/
@@ -32,7 +32,7 @@ Assignment-1-DVC-Practice/
 
 ## 📊 Dataset Description
 
-The project uses a custom **Student Dataset**.
+The assignment uses a custom **Student Dataset**.
 
 ### Dataset Columns
 
