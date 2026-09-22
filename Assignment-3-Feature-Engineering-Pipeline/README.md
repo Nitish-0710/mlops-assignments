@@ -316,7 +316,7 @@ DVC-related files are included in the repository so that the dataset version can
 
 ---
 
-# Project Structure
+# Assignment Structure
 
 ```text
 Assignment-3-Feature-Engineering-Pipeline/
@@ -416,7 +416,7 @@ from the configured DVC storage.
 
 ## 6. Start the MLflow Tracking Server
 
-From the MLOps project root, start the MLflow server:
+From the Assignment root, start the MLflow server:
 
 ```bash
 mlflow server --port 5000
