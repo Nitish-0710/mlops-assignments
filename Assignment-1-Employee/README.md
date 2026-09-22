@@ -14,7 +14,7 @@ The objective of this assignment is to implement **Dataset Versioning** using **
 - DVC (Data Version Control)
 
 
-## 📂 Project Structure
+## 📂 Assignment Structure
 
 ```text
 Assignment-1-Employee/
@@ -32,7 +32,7 @@ Assignment-1-Employee/
 
 ## 📊 Dataset Description
 
-The project uses a custom **Employee Salary Dataset**.
+The assignment uses a custom **Employee Salary Dataset**.
 
 ### Initial Columns
 
