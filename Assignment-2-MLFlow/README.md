@@ -109,7 +109,6 @@ Make sure the following are installed:
 - Git
 - Jupyter Notebook or VS Code
 
-The project also contains a `requirements.txt` file with the required Python packages.
 
 ### 1. Clone the Repository
 
@@ -146,8 +145,6 @@ source .venv/bin/activate
 
 ### 4. Install Dependencies
 
-The required Python packages are provided in the project's `requirements.txt` file.
-
 From the mlops-assignments, run:
 
 ```bash
@@ -156,7 +153,7 @@ pip install -r requirements.txt
 
 ### 5. Start the MLflow Tracking Server
 
-From the MLOps project root, start the MLflow tracking server:
+From the Assignment root, start the MLflow tracking server:
 
 ```bash
 mlflow server --port 5000
