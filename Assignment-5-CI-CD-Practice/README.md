@@ -12,7 +12,7 @@ A Student Placement Prediction model is developed using Python and scikit-learn.
 
 Develop a Machine Learning model that predicts whether a student will be placed based on academic and skill-related features.
 
-The project demonstrates how CI/CD can be applied to a Machine Learning workflow so that changes pushed to GitHub are automatically validated and tested.
+The assignment demonstrates how CI/CD can be applied to a Machine Learning workflow so that changes pushed to GitHub are automatically validated and tested.
 
 The CI pipeline must ensure that:
 
@@ -30,7 +30,7 @@ The CD stage is executed only after the CI stage succeeds.
 
 ## 📊 Dataset
 
-The project uses a small custom Student Placement dataset.
+The assignment uses a small custom Student Placement dataset.
 
 ### Features
 
@@ -89,7 +89,7 @@ The achieved accuracy therefore satisfies the configured quality gate.
 
 ---
 
-## 📂 Project Structure
+## 📂 Assignment Structure
 
 ```text
 Assignment-5-CI-CD-Practice/
@@ -141,7 +141,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 Running the Project Locally
+## 🚀 Running the Assignment Locally
 
 ### 1. Train the Model
 
@@ -200,7 +200,7 @@ Run:
 python -m pytest
 ```
 
-The project contains five automated tests covering:
+The assignment contains five automated tests covering:
 
 * Model file existence
 * Model loading
@@ -477,4 +477,4 @@ This practice assignment demonstrates how a Machine Learning project can be inte
 
 Every push to the `main` branch can trigger automated validation, model training, testing, prediction checks, and code-quality checks. Deployment is allowed only after the CI stage successfully completes.
 
-The project also demonstrates failure handling by intentionally introducing a failing test, verifying that deployment is blocked, and subsequently restoring the test to achieve a successful CI/CD run.
+The assignment also demonstrates failure handling by intentionally introducing a failing test, verifying that deployment is blocked, and subsequently restoring the test to achieve a successful CI/CD run.
