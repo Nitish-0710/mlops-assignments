@@ -7,3 +7,4 @@ mlruns/
 mlartifacts
 .pytest_cache/
 *.pdf
+prometheus-data
